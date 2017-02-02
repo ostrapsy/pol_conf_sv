@@ -149,7 +149,7 @@ $(function() {
    	  $('#timer1').text('00:00');
     
    	  $('#continue1').on('click',function() {
-		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick;
+		location.href = window.redirect+'&p='+window.participant+'&c='+window.condition+'&u='+encodeURI(window.username)+'&av='+window.avatarexport+'&d='+encodeURI(window.description)+'&click='+window.linkClick+'&old='+window.old;
 	  });
     
    	  },60000);
@@ -509,6 +509,12 @@ $(function() {
     } else {
       window.participant = 0; // participant defaults to 0
     }    
+    // If old avatars or not
+    if(window.QueryString.old !== undefined && !isNaN(parseInt(window.QueryString.old))) {
+      window.old = parseInt(window.QueryString.old);
+    } else {
+      window.old = 0; // participant defaults to 0
+    } 
     // redirect
     if(window.QueryString.redirect !== undefined && window.QueryString.redirect !== "") {
       window.redirect = decode(window.QueryString.redirect);
