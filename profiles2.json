@@ -5,12 +5,12 @@ window.others2 = {
   "posts1" : [
       {
         "avatar": "avatars/others/george.png",
-        "username": "George",
+        "username": "David",
 	"userage": "26",
-	"usergender": "male",
-	"userpolitic": "technology, films and reading",
+	"usergender": "man",
+	"userpolitic": "teknik",
 	"shownlikes": "3",
-        "text": "George here. I work in IT and I am really into politics. I am a member of the [insert organization X]. I would be very happy if you could spare a couple of minutes to answer a couple of easy question and sign my ",
+        "text": "David här. Jag jobbar inom IT och är väldigt intresserad av politik. Jag är med i [insert organization X]. Jag skulle bli väldigt glad om ni hade kunnat ta ett par minuter för att svara på ett par frågor och skriva under min ",
         "likes": [45000, 50000, 150000] //4
       }
 
