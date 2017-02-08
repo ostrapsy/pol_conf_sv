@@ -53,7 +53,7 @@ $(function() {
 	
     // Usernames by which the participant will receive "likes"
 	// If group member names are changed, these should be changed accordingly.
-    settings.likes_by = ['George','AncaD','Sarah','Arjen','Jane','Nick','Dan','Heather','Ky'];
+    settings.likes_by = ['David','AncaD','Sarah','Arjen','Marie','Nick','Dan','Heather','Ky'];
     //settings.likes_by_after = ['AncaD','Sarah','Jane','Nick','Dan','Heather','Ky'];
   }
   
@@ -107,31 +107,31 @@ $(function() {
 	  var tpl = $('#newtmp2').html(),html = Mustache.to_html(tpl, others3);
 	  $("#profiles2").append(html);
 	  $(window).unbind('beforeunload');
-	  var names = ['Arjen','AncaD','Sarah','Jane',];
+	  var names = ['Arjen','AncaD','Sarah','Marie',];
 	  //var times = [6000,12000,19000,28000];
 	  var times = [15000,21000,28000,39000];
 	  //var antal = 4;
 	  //var index = 0;
 	  
 	   if (window.condition == 1) {
-	  	var themsg1 = names[0] + " klickade på X's länk";
+	  	var themsg1 = names[0] + " klickade på Davids länk";
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
   			}, times[0]);
-	  	var themsg2 = names[1] + " klickade på X's länk";
+	  	var themsg2 = names[1] + " klickade på Davids länk";
 	  	setTimeout(function(nej) {
   				alertify.success(themsg2)
   			}, times[1]);
-	  	var themsg3 = names[2] + " klickade på X's länk";
+	  	var themsg3 = names[2] + " klickade på Davids länk";
 	  	setTimeout(function(va) {
   				alertify.success(themsg3)
   			}, times[2]);
-	  	var themsg4 = names[3] + " klickade på X's länk";
+	  	var themsg4 = names[3] + " klickade på Davids länk";
 	  	setTimeout(function(vem) {
   				alertify.success(themsg4)
   			}, times[3]);
   	  } else if (window.condition == 2) {
-		var themsg1 = names[2] + " klickade på X's länk";
+		var themsg1 = names[2] + " klickade på Davids länk";
 	  	setTimeout(function(hej) {
   				alertify.success(themsg1)
   			}, times[2]);
@@ -245,7 +245,7 @@ $(function() {
 		   var ugender = $('input[name="gender"]:checked').val();
 		} else if($('input[name="gender"]:checked').val() == null) {
 			error = 1;
-			errormsg = 'Var god ange kön';
+			errormsg = 'Var god ange ditt kön';
 			ugender ='undefined';
 		}
 
@@ -295,7 +295,7 @@ $(function() {
   			window.avatarexport = /avatar_([^\s]+)/.exec(window.avatar)[1];
     			init_text();  			
     		} else {
-    			alertify.log("Please select an avatar","error");
+    			alertify.log("Var god välj en avatar","error");
     		}
     	});
 
@@ -315,7 +315,7 @@ $(function() {
   		var error = 0;
   		if($('#description').val() == "") {
   			error = 1;
-  			errormsg = 'Var god skriv en stycke';
+  			errormsg = 'Var god skriv en introducerande text';
   		}
   		if($('#description').val() !== "" && $('#description').val().length < 140) {
 		
