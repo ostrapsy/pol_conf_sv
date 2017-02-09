@@ -10,7 +10,7 @@ window.others2 = {
 	"usergender": "man",
 	"userpolitic": "teknik",
 	"shownlikes": "3",
-        "text": "David här. Jag jobbar inom IT och är väldigt intresserad av politik. Jag är med i [insert organization X]. Jag skulle bli väldigt glad om ni hade kunnat ta ett par minuter för att svara på ett par frågor och skriva under min ",
+        "text": "David här. Jag jobbar inom IT och är väldigt intresserad av politik. Jag är med i nätverket För äldres rätt. Vi försöker sätt press på landstingen att avsätta mer medel till förmånga för äldrevården. Om du har tid över får du gärna svara på ett par frågor och skriva under min ",
         "likes": [45000, 50000, 150000] //4
       }
 
