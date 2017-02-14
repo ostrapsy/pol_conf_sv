@@ -307,7 +307,7 @@ $(function() {
   	$('#text').show();
 
   	$("#description").keyup(function(){
-  	  $("#count").text("Återstående tecken: " + (400 - $(this).val().length));
+  	  $("#count").text("Tecken kvar: " + (400 - $(this).val().length));
   	});
 
   	$('#submit_text').on('click',function() {
