@@ -85,7 +85,7 @@ You can edit the instructions text for entering usernames below.
 */ 
 -->
 	<h3>Var vänligt fyll i ett användarnamn</h3>
-	Det kan vara ditt förnamn, ett smeknam eller initialer...<br>
+	Det kan vara ditt förnamn, ett smeknamn eller initialer ...<br>
 	<br>
 	
 	<input type="text" size="10" maxlength="10" style="width: 300px;" id="username"  autocomplete="off" /><br>	<br>
@@ -105,10 +105,10 @@ You can edit the instructions text. The text "Your choice of avatar will not be 
 */ 
 -->	<h3>Välj en avatar</h3>
 	Avataren kommer att representera dig under gruppuppgiften, men kommer inte att länkas till något av dina svar.<br>
-	Ditt val av avatar kommer inte att sparars eller analyseras.
+	Ditt val av avatar kommer inte att sparas eller analyseras.
 	<br><br>
 	<div class="avatars"></div>
-	<br><button type="submit"  id="submit_avatar">Forsätt</button>
+	<br><button type="submit"  id="submit_avatar">Fortsätt</button>
 	<br><br>
 </div>	
 
@@ -134,7 +134,7 @@ You can edit the instructions text for entering demo below.
  	 		<label for="annat">Annat</label>
 	</form>
 	<b>Intressen:</b><br>
-	Välj minst ett, men inte mer än tre...<br>
+	Välj minst ett, men inte fler än tre ...<br>
 	<form action="" id=interForm>
  	 	<input type="checkbox" id="musik" style="vertical-align: middle; margin: 0px;" name="inter" value="musik">
 			<label for="musik">Musik</label>
@@ -182,7 +182,7 @@ You can edit the instructions text.
 
 */ 
 -->	<h3>Introducera dig själv</h3>
-	Skriv ett stycke där du introducerar dig själv för resten av gruppen.<br>
+	Skriv en kort text där du introducerar dig själv för resten av gruppen.<br>
 	Skriv något som du skulle vilja berätta om dig själv – vad som helst. <br>
 	<br><br>	
 	<textarea id="description" autocomplete="off" /></textarea><br>
@@ -204,11 +204,12 @@ You can edit the instructions text. The prompt to try and form an impression of 
 -->  <h3>Gruppintroduktion</h3>
   Strax efter att du loggat in kommer du att kunna se en begränsad version <br>
   av de andra deltagarnas profiler. Om du skulle vilja veta mer om en person<br>
-  kommer du ha möjlighet att klicka på en "Gilla"-knapp liknande "Gilla"-knappen<br>
-  på Facebook ("favorit" på Twitter, &hearts; på Tumblr och Instagram, etc.)<br>
+  kommer du att ha möjlighet att klicka på en "Gilla"-knapp som liknar<br>
+  "Gilla"-knappen på Facebook ("favorit" på Twitter, &hearts; på Tumblr och<br>
+  Instagram, etc.)<br>
   <br>
   Även om er interaktion kommer att vara minimal, försök så gott du kan att<br>
-  att skapa dig en bild av människorna i gruppen. Försök att föreställa dig<br>
+  skapa dig en bild av människorna i gruppen. Försök att föreställa dig<br>
   dem i verkligheten – hur de kan tänkas låta, vilken typ av människor det<br>
   är och hur du skulle komma överens med dem om du träffade dem.
   <br><br>
@@ -216,14 +217,14 @@ You can edit the instructions text. The prompt to try and form an impression of 
   studien. Försök därför att vara uppmärksam, utan att byta fönster eller<br>
   göra orelaterade saker.<br>
   Frågor om de övriga deltagarna kommer att ställas.
-  <br><br><b>Om dessa instruktioner är tydliga kan du fortsätta genom att klicka på 'Logga in'.</b><br>
+  <br><br><b>När du är redo kan du fortsätta genom att klicka på 'Logga in'.</b><br>
   <br>
   <button type="submit"  id="submit_fb_intro">Logga in</button>
 </div>
 
 <div id="fb_login" style="display:none;" class="instr">
   <h3>Upprättar anslutning</h3>
-  var god vänta medan du ansluts till din grupp...<br><br>
+  var god vänta medan du ansluts till din grupp ...<br><br>
   <img class="load" src='ajax-loader.gif' id="loader">
   <div id="msg_all_done" style="display:none;">
   <br>
@@ -255,7 +256,7 @@ De två divsen nedan är för after task
         <h3>{{username}}</h3>
     	
     	<div class="main1">
-		<p><i>"En {{userage}} år gammal {{usergender}} som gillar {{userpolitic}}."</i></p>
+		<p><i>"En {{userage}}-årig {{usergender}} som gillar {{userpolitic}}."</i></p>
 		<p>{{text}} <a href="https://www.google.com">survery</a></p>
     	</div>
 	
@@ -295,7 +296,7 @@ De två divsen nedan är för after task
         <h3>{{username}}</h3>
     	
     	<div class="main1">
-		<p><i>"En {{userage}} år gammal {{usergender}} som gillar {{userpolitic}}."</i></p>
+		<p><i>"En {{userage}}-årig {{usergender}} som gillar {{userpolitic}}."</i></p>
 		<p>{{text}}</p>
     	</div>
 	
@@ -317,7 +318,7 @@ De två divsen nedan är för after task
         <h3>{{username}}</h3>
     	
     	<div class="main1">
-		<p><i>"En {{userage}} år gammal {{usergender}} som gillar {{userpolitic}}."</i></p>
+		<p><i>"En {{userage}}-årig {{usergender}} som gillar {{userpolitic}}."</i></p>
 		<p>{{text}} <a href="JavaScript:newPopup('http://www.nolltaxa.se/namninsamling/');" id="link">namninsamling</a> för gratis kollektivtrafik i hela landet.</p>
     	</div>
 	
@@ -360,7 +361,7 @@ You can edit the instructions text.
 	
     	<div class="main">
 	
-		<p><i>"En {{userage}} år gammal {{usergender}} som gillar {{userpolitic}}."</i></p>
+		<p><i>"En {{userage}}-årig {{usergender}} som gillar {{userpolitic}}."</i></p>
     		
     	</div>
 
@@ -388,7 +389,7 @@ You can edit the instructions text.
     	
     	<div class="main">
 
-		<p><i>"En {{userage}} år gammal {{usergender}} som gillar {{userpolitic}}."</i></p>
+		<p><i>"En {{userage}}-årig {{usergender}} som gillar {{userpolitic}}."</i></p>
     		
     	</div>
 
